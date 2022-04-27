@@ -11,14 +11,16 @@ while y == 1:
     if f == 1:
         f = 0
         while x <= 20:
-            x += 1
             pixels[x] = (255, 0, 100)
+            x += 1
             time.sleep(0.1)
+        x -= 1
     else:
         f = 1
         while x >= 0:
-            x -= 1
             pixels[x] = (0, 255, 100)
+            x -= 1
             time.sleep(0.1)
+        x += 1
 
 

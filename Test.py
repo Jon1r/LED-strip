@@ -15,7 +15,8 @@ while y == 1:
             time.sleep(0.5)
             x += 1
     else:
-        while x > 0:
+        f = 1
+        while x > -1:
             pixels[x] = (0, 255, 0)
             time.sleep(0.5)
             x -= 1

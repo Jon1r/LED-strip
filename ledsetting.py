@@ -2,6 +2,7 @@ import board
 import neopixel
 
 led_count = 42
+MaxLvl = 3
 
 pixels = neopixel.NeoPixel(board.D18, led_count)
 p = 0

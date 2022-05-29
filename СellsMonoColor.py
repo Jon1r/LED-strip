@@ -1,10 +1,10 @@
 import ledsetting
 import time
 
-BrightPar = 100
+BrightPar = 10
 r = 0
 b = 0
-g = 2.55
+g = 25.5
 
 
 def staticcolor(k=1, i=0):
@@ -28,7 +28,7 @@ def staticcolor(k=1, i=0):
 def pulsecoloron(k=1, i=0):
         while i < ledsetting.MaxLvl:
                 BrightPar = 0
-                while BrightPar <= 100:
+                while BrightPar <= 10:
                         while k < ledsetting.led_count:
                                 if k==1 or k==37:
                                         ledsetting.led_on(i, k, r*BrightPar, g*BrightPar, b*BrightPar)
@@ -50,7 +50,7 @@ def pulsecoloron(k=1, i=0):
 
 def pulsecoloroff(k=1, i=0):
         while i < ledsetting.MaxLvl:
-                BrightPar = 100
+                BrightPar = 10
                 while BrightPar >= 0:
                         while k < ledsetting.led_count:
                                 if k == 1 or k == 37:

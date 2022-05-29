@@ -1,7 +1,7 @@
 import ledsetting
-import Rainbow, StaticColor
+import Rainbow, СellsMonoColor
 
 i = 1
 
 #Rainbow.rainbow()
-StaticColor.staticcolor()
+СellsMonoColor.pulsecolor()

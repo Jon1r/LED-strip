@@ -32,3 +32,6 @@ def staticcolor(char, number):
                         time.sleep(0.2)
                         ledsetting.led_on(0, a, 0, 0, 0)
                 k += 1
+        ledsetting.led_on(0, leftside, r * BrightPar, g * BrightPar, b * BrightPar)
+        ledsetting.led_on(0, leftside + 1, r * BrightPar, g * BrightPar, b * BrightPar)
+        ledsetting.led_on(0, leftside + 2, r * BrightPar, g * BrightPar, b * BrightPar)

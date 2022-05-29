@@ -1,6 +1,7 @@
 import ledsetting
-import Rainbow
+import Rainbow, StaticColor
 
 i = 1
 
 Rainbow.rainbow()
+StaticColor.staticcolor()

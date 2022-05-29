@@ -3,5 +3,5 @@ import Rainbow, StaticColor
 
 i = 1
 
-Rainbow.rainbow()
+#Rainbow.rainbow()
 StaticColor.staticcolor()

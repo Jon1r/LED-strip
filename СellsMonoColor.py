@@ -26,8 +26,8 @@ def staticcolor(k=1, i=0):
 
 
 def pulsecoloron(k=1, i=0):
-        BrightPar = 0
         while i < ledsetting.MaxLvl:
+                BrightPar = 0
                 while BrightPar <= 100:
                         while k < ledsetting.led_count:
                                 if k==1 or k==37:
@@ -43,7 +43,7 @@ def pulsecoloron(k=1, i=0):
                                 k += 7
 
                         k = 1
-                        time.sleep(0.5)
+                        time.sleep(0.05)
                         BrightPar += 1
                 i += 1
 

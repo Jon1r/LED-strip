@@ -4,6 +4,7 @@ import Rainbow, СellsMonoColor, СellIndication
 i = 1
 
 #Rainbow.rainbow()
-while i == 1:
-    СellsMonoColor.pulsecoloron()
-    СellsMonoColor.pulsecoloroff()
+#while i == 1:
+#    СellsMonoColor.pulsecoloron()
+#    СellsMonoColor.pulsecoloroff()
+СellIndication.staticcolor(2, 1)

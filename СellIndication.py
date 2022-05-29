@@ -14,12 +14,12 @@ def staticcolor(char, number):
         leftside = 1 + char*7
         rightside = 1 + char*7 + 3
         while k < 42:
-                b = leftside - 42 + k
+                p = leftside - 42 + k
                 a = rightside + 42 - k
                 if 0 <= b < leftside:
-                        ledsetting.led_on(0, b, r * BrightPar, g * BrightPar, b * BrightPar)
+                        ledsetting.led_on(0, p, r * BrightPar, g * BrightPar, b * BrightPar)
                         time.sleep(0.2)
-                        ledsetting.led_on(0, b, 0, 0, 0)
+                        ledsetting.led_on(0, p, 0, 0, 0)
                 elif rightside < a < 42:
                         ledsetting.led_on(0, a, r * BrightPar, g * BrightPar, b * BrightPar)
                         time.sleep(0.2)

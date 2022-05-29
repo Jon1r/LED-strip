@@ -43,7 +43,6 @@ def pulsecoloron(k=1, i=0):
                                 k += 7
 
                         k = 1
-                        time.sleep(0.0001)
                         BrightPar += 1
                 i += 1
 
@@ -66,6 +65,5 @@ def pulsecoloroff(k=1, i=0):
                                 k += 7
 
                         k = 1
-                        time.sleep(0.0001)
                         BrightPar -= 1
                 i += 1

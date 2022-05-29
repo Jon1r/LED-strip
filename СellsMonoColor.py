@@ -43,14 +43,14 @@ def pulsecoloron(k=1, i=0):
                                 k += 7
 
                         k = 1
-                        time.sleep(0.05)
+                        time.sleep(0.005)
                         BrightPar += 1
                 i += 1
 
 
 def pulsecoloroff(k=1, i=0):
-        BrightPar = 100
         while i < ledsetting.MaxLvl:
+                BrightPar = 100
                 while BrightPar >= 0:
                         while k < ledsetting.led_count:
                                 if k == 1 or k == 37:
@@ -66,6 +66,6 @@ def pulsecoloroff(k=1, i=0):
                                 k += 7
 
                         k = 1
-                        time.sleep(0.5)
+                        time.sleep(0.005)
                         BrightPar -= 1
                 i += 1

@@ -4,7 +4,9 @@ import neopixel
 led_count = 42
 MaxLvl = 3
 
-pixels = neopixel.NeoPixel(board.D18, led_count)
+full_count = led_count*MaxLvl
+
+pixels = neopixel.NeoPixel(board.D18, full_count)
 p = 0
 
 

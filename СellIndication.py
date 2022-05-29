@@ -20,16 +20,16 @@ def staticcolor(char, number):
                         if rightside < a < 42:
                                 ledsetting.led_on(0, p, r * BrightPar, g * BrightPar, b * BrightPar)
                                 ledsetting.led_on(0, a, r * BrightPar, g * BrightPar, b * BrightPar)
-                                time.sleep(0.1)
+                                time.sleep(0.01)
                                 ledsetting.led_on(0, p, 0, 0, 0)
                                 ledsetting.led_on(0, a, 0, 0, 0)
                         else:
                                 ledsetting.led_on(0, p, r * BrightPar, g * BrightPar, b * BrightPar)
-                                time.sleep(0.1)
+                                time.sleep(0.01)
                                 ledsetting.led_on(0, p, 0, 0, 0)
                 elif rightside < a < 42:
                         ledsetting.led_on(0, a, r * BrightPar, g * BrightPar, b * BrightPar)
-                        time.sleep(0.2)
+                        time.sleep(0.01)
                         ledsetting.led_on(0, a, 0, 0, 0)
                 k += 1
         ledsetting.led_on(0, leftside, r * BrightPar, g * BrightPar, b * BrightPar)

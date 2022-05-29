@@ -8,7 +8,7 @@ g = 255
 def staticcolor(k=1, i=0):
         while i < ledsetting.MaxLvl:
                 while k < ledsetting.led_count:
-                        if k==1 or k==3:
+                        if k==1 or k==37:
                                 ledsetting.led_on(i, k, r, g, b)
                                 ledsetting.led_on(i, k+1, r, g, b)
                                 ledsetting.led_on(i, k+2, r, g, b)
@@ -20,3 +20,4 @@ def staticcolor(k=1, i=0):
                                 ledsetting.led_on(i, k+2, r, g, b)
                         k += 7
                 i += 1
+                k = 1

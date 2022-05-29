@@ -1,7 +1,9 @@
 import ledsetting
-import Rainbow, СellsMonoColor
+import Rainbow, СellsMonoColor, СellIndication
 
 i = 1
 
 #Rainbow.rainbow()
-СellsMonoColor.pulsecolor()
+while i == 1:
+    СellsMonoColor.pulsecoloron()
+    СellsMonoColor.pulsecoloroff()

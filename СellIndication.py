@@ -1,0 +1,27 @@
+import ledsetting
+import time
+
+BrightPar = 10
+r = 0
+b = 0
+g = 25.5
+char = 2
+number = 1
+
+
+def staticcolor(char, number):
+        k = 0
+        leftside = 1 + char*7
+        rightside = 1 + char*7 + 3
+        while k < 42:
+                b = leftside - 42 + k
+                a = rightside + 42 - k
+                if 0 <= b < leftside:
+                        ledsetting.led_on(0, b, r * BrightPar, g * BrightPar, b * BrightPar)
+                        time.sleep(0.2)
+                        ledsetting.led_on(0, b, 0, 0, 0)
+                elif rightside < a < 42:
+                        ledsetting.led_on(0, a, r * BrightPar, g * BrightPar, b * BrightPar)
+                        time.sleep(0.2)
+                        ledsetting.led_on(0, a, 0, 0, 0)
+                k += 1

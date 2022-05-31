@@ -8,4 +8,4 @@ i = 1
 #while i == 1:
 #    СellsMonoColor.pulsecoloron()
 #    СellsMonoColor.pulsecoloroff()
-СellIndication.staticcolor(2, 1)
+#СellIndication.staticcolor(2, 1)
